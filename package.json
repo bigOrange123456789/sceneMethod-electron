@@ -1,0 +1,36 @@
+{
+  "name": "web3dviewer",
+  "productName": "Exporter",
+  "version": "1.5.1",
+  "description": "Preview.",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder --dir --win",
+    "package:linux": "electron-builder  --dir --linux"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "core-js": "^3.19.0",
+    "jszip": "^3.7.0",
+    "open": "6.0.0",
+    "pako": "^2.1.0",
+    "regenerator-runtime": "^0.13.9",
+    "setimmediate": "^1.0.5"
+  },
+  "build": {
+    "win": {
+      "icon": "./assets/favicon.ico"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ]
+    }
+  },
+  "devDependencies": {
+    "electron": "^24.8.8",
+    "electron-builder": "^23.6.0"
+  },
+  "main": "main.js"
+}
